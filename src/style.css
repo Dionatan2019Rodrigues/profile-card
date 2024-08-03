@@ -1,10 +1,53 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'rubik';
+  src: url(fonte-rubik/Rubik-VariableFont_wght.ttf) format('truetype');
+  font-weight: normal;
+  font-size: normal;
+}
+
+:root{
+  --rosa: #F9E6FF;
+  --azul: #AEF1F5;
+  --amarelo: #FFDCB5;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 /* write your CSS here */
-h1{
-  color: brown;
+html, body{
+  background-image: linear-gradient(to right,var(--rosa), var(--azul), var(--amarelo));
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > main{
+  background-color: white;
+  width: 60vw;
+  height: 65vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > main > #card_principal{
+  background-image: linear-gradient(to right,var(--rosa), var(--azul), var(--amarelo));
+  border-radius: 10px;
+  width: 56vw;
+  height: 56vh;
+
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+#text{
+  font-family: Arial, Helvetica, sans-serif;
 }
